@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Outfit:wght@100&family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+}
+
+.title {
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+.app {
+  background-color: #14161a;
+  color: white;
+  min-height: 100vh;
+}
+
+.banner {
+  background-image: url("../banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.bannerImg {
+  width: 100%;
+  background-size: contain;
+}
+
+.bannerContent {
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 20px 0;
+  height: 500px;
+}
+
+.tagline {
+  /* border: 2px solid red; */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carouselItems {
+  /* border: 2px solid rebeccapurple; */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+.tableCell {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row {
+  background-color: #16171a;
+  cursor: pointer;
+}
+.row:hover {
+  background-color: #131111;
+}
+
+.selectbutton {
+  border: 1px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  width: 22%;
+  margin: 5px;
+  font-size: 0.6em;
+}
+
+.selectbutton:hover {
+  background-color: gold;
+  color: black;
+}
+/* -------- */
+
+.coinPageContainer {
+  /* border: 2px solid red; */
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar {
+  /* border: 5px solid rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+  border-right: 2px solid gray;
+}
+
+.heading {
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.description {
+  /* border: 2px solid yellowgreen; */
+  text-align: justify;
+  padding: 3%;
+}
+
+.marketData {
+  /* border: 2px solid white; */
+  width: 90%;
+  padding: 10px;
+  font-size: 1em;
+  color: darkgray;
+}
+
+.chartContainer {
+  /* border: 2px solid green; */
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .coinPageContainer {
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    margin-top: 2rem;
+  }
+  .marketData {
+    /* border: 2px solid whitesmoke; */
+    align-self: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 1.5em;
+  }
+  .description {
+    text-align: center;
+  }
+
+  .chartContainer {
+    /* border: 2px solid green; */
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    height: 100vh;
+    margin: auto 0;
+  }
+  .button {
+    padding: 2rem;
+  }
+  .selectbutton {
+    font-size: 1em;
+  }
+}
+
+.sidebarContainer {
+  width: 350px;
+  height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+}
+
+.profile {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 92%;
+}
+.watchlist {
+  background-color: gray;
+  flex: 1;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  overflow: scroll;
+}
